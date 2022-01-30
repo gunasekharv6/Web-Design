@@ -110,7 +110,7 @@ video{
 video:hover{
     /* padding-left: 20%; */
     transform: scale(1.1);
-    animation-play-state: running;
+    /* animation-play-state: running; */
 }
 
 
@@ -201,7 +201,7 @@ form .btn button{
 
 
 
-.welcomenotes article{
+.welcomenotes section{
     margin-top: 20px;;
     border: 6px solid rgb(48, 36, 36);
     margin-left: 10px;
@@ -218,13 +218,13 @@ form .btn button{
 }
 
 
-.menupagearticles{
+.menupagesection{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
 
-.menupagearticles p{
+.menupagesection p{
     display: block;
     width: 50%;
     text-align: justify;
@@ -240,6 +240,10 @@ form .btn button{
 .checkandquantitydiv{
     display:inline-flex;
     flex-wrap: wrap;
+}
+
+.checkandquantitydiv input{
+    margin-right: 20px;;
 }
 
 
@@ -261,8 +265,16 @@ button{
     padding: 8px 10px;
     border-radius: 10%;
     color: rgb(212, 210, 201);
-    background-color: rgb(43, 34, 124);
+    background-color: rgb(69, 60, 158);
     margin-bottom: 10px;
+}
+
+button:hover{
+    background-color: rgba(194, 159, 85, 0.842);
+    box-shadow: -5px 5px rgb(86, 131, 113);
+    cursor: pointer;
+    border: 1px solid #777;
+    transform: scale(1.15);
 }
 
 
