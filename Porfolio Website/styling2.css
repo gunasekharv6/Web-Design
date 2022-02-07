@@ -93,6 +93,10 @@ body{
   padding-bottom: 0%; */
 }
 
+a:hover{
+  color: #c0392b;
+}
+
 a{
   text-decoration: none;
   color: whitesmoke;
