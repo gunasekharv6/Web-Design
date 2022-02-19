@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table View</title>
+
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        th {
+            color: blue;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: cornsilk;
+        }
+
+        td {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <body>
+        <table id="myTable">
+            <tr>
+                <th>Title</th>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>Email ID</th>
+                <th>PhoneNumber</th>
+                <th>Street Address 1</th>
+                <th>Street Address 2</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Zipcode</th>
+                <th>Source</th>
+                <th>Drinks</th>
+                <th>Addon</th>
+                <th>Text</th>
+                <th>Comments</th>
+            </tr>
+
+        </table>
+
+        <script>
+            const url_string = window.location;
+            const url = new URL(url_string);
+
+            let title = url.searchParams.get("title");
+            let firstname = url.searchParams.get("firstName");
+            let lastname = url.searchParams.get("lastName");
+            let emailId = url.searchParams.get("emailId");
+            let phoneNumber = url.searchParams.get("phoneNumber");
+            let stadrs1 = url.searchParams.get("streetAddress1");
+            let stadrs2 = url.searchParams.get("streetAddress2");
+            let city = url.searchParams.get("city");
+            let state = url.searchParams.get("state");
+            let zipcode = url.searchParams.get("zipcode");
+            let source = url.searchParams.get("source");
+            let drinks = url.searchParams.get("drinks");
+            let addon = url.searchParams.get("addon");
+            let suggestion = url.searchParams.get("suggestion");
+            let comments = url.searchParams.get("text");
+
+
+            const table = document.getElementById("myTable");
+            console.log(table);
+
+            const row = table.insertRow(1);
+
+            const cell1 = row.insertCell(0);
+            const cell2 = row.insertCell(1);
+            const cell3 = row.insertCell(2);
+            const cell4 = row.insertCell(3);
+            const cell5 = row.insertCell(4);
+            const cell6 = row.insertCell(5);
+            const cell7 = row.insertCell(6);
+            const cell8 = row.insertCell(7);
+            const cell9 = row.insertCell(8);
+            const cell10 = row.insertCell(9);
+            const cell11 = row.insertCell(10);
+            const cell12 = row.insertCell(11);
+            const cell13 = row.insertCell(12);
+            const cell14 = row.insertCell(13);
+            const cell15 = row.insertCell(14);
+
+            cell1.innerHTML = title;
+            cell2.innerHTML = firstname;
+            cell3.innerHTML = lastname;
+            cell4.innerHTML = emailId;
+            cell5.innerHTML = phoneNumber;
+            cell6.innerHTML = stadrs1;
+            cell7.innerHTML = stadrs2;
+            cell8.innerHTML = city;
+            cell9.innerHTML = state;
+            cell10.innerHTML = zipcode;
+            cell11.innerHTML = source;
+            cell12.innerHTML = drinks;
+            cell13.innerHTML = addon;
+            cell14.innerHTML = suggestion;
+            cell15.innerHTML = comments;
+        </script>
+
+
+    </body>
+
+</htmL>
