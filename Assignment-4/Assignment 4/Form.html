@@ -93,11 +93,12 @@
 
 				<label for="zipcode">ZipCode*:</label>
 				<input type="text" name="zipcode" id="zipcode" placeholder="xxxxxx" required
-					onblur="Validation(this,4)" />
-				<br><br>
+					oninput="Validate(this,4)" />
 				<div id="errorMsgZipcode" style="display: none;color:red;">
 					Please Enter Valid Zip Code
 				</div>
+				<br><br>
+
 
 				<label>How did you hear*:</label>
 				<input type='checkbox' name="source" value="facebook" /> Facebook
