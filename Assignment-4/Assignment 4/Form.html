@@ -95,15 +95,18 @@
 				<input type="text" name="zipcode" id="zipcode" placeholder="xxxxxx" required
 					oninput="Validate(this,4)" />
 				<div id="errorMsgZipcode" style="display: none;color:red;">
-					Please Enter Valid Zip Code
+					Please Enter a Valid Zip Code
 				</div>
 				<br><br>
 
 
 				<label>How did you hear*:</label>
-				<input type='checkbox' name="source" value="facebook" /> Facebook
-				<input type='checkbox' name="source" value="google" /> Google
-				<input type='checkbox' name="source" value="yelp" /> Yelp
+				<input type='checkbox' name="source" value="facebook" class="hearhow" /> Facebook
+				<input type='checkbox' name="source" value="google" class="hearhow" /> Google
+				<input type='checkbox' name="source" value="yelp" class="hearhow" /> Yelp
+				<div id="errorsourceinfo" style="display: none;color:red;">
+					Please Select atleast one option
+				</div>
 				<br><br>
 
 

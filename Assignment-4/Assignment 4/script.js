@@ -125,9 +125,31 @@ function Validate(object, type) {
 let form1 = document.getElementById('btnsubmit');
 form1.addEventListener('click', (e) => {
     e.preventDefault();
-    e.target.parentElement.submit();
-    e.target.parentElement.reset();
+    atleastOneCheckbox()
+    if (atleastOneCheckbox()) {
+        e.target.parentElement.submit();
+        e.target.parentElement.reset();
+    }
+
 });
+
+
+
+
+
+function atleastOneCheckbox() {
+    const checkboxes = document.querySelectorAll('.hearhow:checked');
+    const errorsourceinfo = document.querySelector('#errorsourceinfo');
+
+    if (checkboxes.length == 0) {
+        errorsourceinfo.style.display = "inline-block";
+        return false;
+    }
+    else {
+        errorsourceinfo.style.display = "none";
+        return true;
+    }
+}
 
 
 
